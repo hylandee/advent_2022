@@ -29,10 +29,12 @@ fn solve(day: i32, part: i32) {
     let solver: fn(String) -> () = match (day, part) {
         (1, 1) => day1::part1::solve,
         (1, 2) => day1::part2::solve,
-        (2, 1) => day1::part1::solve,
-        (2, 2) => day1::part1::solve,
-        (3, 1) => day1::part2::solve,
-        (3, 2) => day1::part2::solve,
+        (2, 1) => day2::part1::solve,
+        (2, 2) => day2::part1::solve,
+        (3, 1) => day3::part2::solve,
+        (3, 2) => day3::part2::solve,
+        (4, 1) => day4::part2::solve,
+        (4, 2) => day4::part2::solve,
         (_, _) => |_| (),
     };
     solver(input);
