@@ -17,23 +17,16 @@ fn input_for_day(day: i32) -> String {
     std::fs::read_to_string(path).unwrap()
 }
 
-fn get_int(prompt: &str) -> i32 {
-    println!("{prompt}");
-    let mut input = String::new();
-    std::io::stdin().read_line(&mut input).unwrap();
-    input.trim().parse().unwrap()
-}
-
 fn solve(day: i32, part: i32) {
     let input = input_for_day(day);
     let solver: fn(String) -> () = match (day, part) {
         (1, 1) => day1::part1::solve,
         (1, 2) => day1::part2::solve,
         (2, 1) => day2::part1::solve,
-        (2, 2) => day2::part1::solve,
-        (3, 1) => day3::part2::solve,
+        (2, 2) => day2::part2::solve,
+        (3, 1) => day3::part1::solve,
         (3, 2) => day3::part2::solve,
-        (4, 1) => day4::part2::solve,
+        (4, 1) => day4::part1::solve,
         (4, 2) => day4::part2::solve,
         (_, _) => |_| (),
     };
