@@ -13,7 +13,6 @@ fn main() {
 fn input_for_day(day: i32) -> String {
     let path =
         "./src/days/day".to_string() + &day.to_string().to_owned() + &"/input.txt".to_owned();
-    println!("{path}");
     std::fs::read_to_string(path).unwrap()
 }
 
