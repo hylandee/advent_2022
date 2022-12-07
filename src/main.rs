@@ -29,6 +29,8 @@ fn solve(day: i32, part: i32) {
         (4, 2) => day4::part2::solve,
         (5, 1) => day5::part1::solve,
         (5, 2) => day5::part2::solve,
+        (6, 1) => day6::part1::solve,
+        (6, 2) => day6::part2::solve,
         (_, _) => |_| (),
     };
     solver(input);
