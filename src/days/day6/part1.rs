@@ -1,3 +1,6 @@
+use super::common::{are_chars_distinct, find_distinct_substring};
+
 pub fn solve(input: String) {
-    println!("{input}");
+    let answer = find_distinct_substring(&input, 4); 
+    println!("Distinct string found at char {answer}");
 }
