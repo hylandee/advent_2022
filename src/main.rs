@@ -31,7 +31,9 @@ fn solve(day: i32, part: i32) {
         (5, 2) => day5::part2::solve,
         (6, 1) => day6::part1::solve,
         (6, 2) => day6::part2::solve,
-        (_, _) => |_| (),
+        (7, 1) => day7::part1::solve,
+        (7, 2) => day7::part2::solve,
+        (_, _) => |_| panic!("Failed to input your parse"),
     };
     solver(input);
 }
