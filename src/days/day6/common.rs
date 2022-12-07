@@ -12,7 +12,7 @@ pub fn find_distinct_substring(input: &str, size: usize) -> usize {
     }
 }
 
-pub fn are_chars_distinct(sample: &str) -> bool {
+fn are_chars_distinct(sample: &str) -> bool {
     let mut chars = HashSet::new();
     for element in sample.chars() {
         if chars.contains(&element) {
