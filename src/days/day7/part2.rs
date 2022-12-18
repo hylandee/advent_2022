@@ -1,3 +1,4 @@
 pub fn solve(input: String) {
-    println!("no-op");
+    for line in input.lines() {}
+    println!("{input}");
 }
