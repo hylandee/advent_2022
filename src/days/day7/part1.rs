@@ -2,6 +2,7 @@ use std::cell::RefCell;
 use std::collections::HashMap;
 use std::rc::Rc;
 
+// Phoned it in from https://fasterthanli.me/series/advent-of-code-2022/part-7
 pub fn solve(input: String) {
     let root = Rc::new(RefCell::new(Node::default()));
     let mut node = root.clone();
